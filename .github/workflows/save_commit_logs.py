@@ -3,9 +3,9 @@ import json
 
 # Replace 'YOUR_GITHUB_ACCESS_TOKEN' with your actual GitHub access token.
 # If you don't have one, you can create it on GitHub under Developer settings.
-#access_token = 'YOUR_GITHUB_ACCESS_TOKEN'
-#g = Github(access_token)
-g = Github()
+access_token = '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'
+g = Github(access_token)
+#g = Github()
 
 # Replace 'owner' and 'repo' with the username and repository name respectively.
 owner = 'Krishansi'
