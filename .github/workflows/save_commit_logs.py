@@ -33,7 +33,7 @@ for commit in commits:
 print(commit_history)
 
 # Save the commit history as a JSON file
-with open('commit_history.json', 'w') as json_file:
+with open('/home/runner/work/workbook/workbook/commit_history.json', 'w') as json_file:
     json.dump(commit_history, json_file, indent=2)
 
 print("Commit history downloaded and saved in commit_history.json.")
