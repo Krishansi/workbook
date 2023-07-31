@@ -24,6 +24,19 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+     
+      - name: Install dependencies
+        run: pip install PyGithub
+
+      - name: Run Python script to save commit history
+        run: |
+          python save_commit_logs.py
+
+      #- name: Run Python script to save commit history
+      #  env:
+      #    GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_ACCESS_TOKEN }}
+      #  run: |
+      #    python save_commit_history.py $GITHUB_ACCESS_TOKEN
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
