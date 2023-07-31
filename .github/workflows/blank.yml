@@ -32,6 +32,9 @@ jobs:
         run: |
           python /home/runner/work/workbook/workbook/.github/workflows/save_commit_logs.py
 
+      - name: Stage changes
+        run: git add /home/runner/work/workbook/workbook/commit_history.json
+
       #- name: Run Python script to save commit history
       #  env:
       #    GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_ACCESS_TOKEN }}
