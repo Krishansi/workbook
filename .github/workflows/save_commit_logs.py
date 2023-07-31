@@ -9,7 +9,8 @@ g = Github()
 
 # Replace 'owner' and 'repo' with the username and repository name respectively.
 owner = 'Krishansi'
-repo_name = 'workbook'
+#repo_name = 'workbook'
+repo_name = 'workbookPrivate'
 
 # Get the repository object
 repo = g.get_repo(f'{owner}/{repo_name}')
