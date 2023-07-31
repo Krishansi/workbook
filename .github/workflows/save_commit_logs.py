@@ -3,12 +3,13 @@ import json
 
 # Replace 'YOUR_GITHUB_ACCESS_TOKEN' with your actual GitHub access token.
 # If you don't have one, you can create it on GitHub under Developer settings.
-access_token = 'YOUR_GITHUB_ACCESS_TOKEN'
-g = Github(access_token)
+#access_token = 'YOUR_GITHUB_ACCESS_TOKEN'
+#g = Github(access_token)
+g = Github()
 
 # Replace 'owner' and 'repo' with the username and repository name respectively.
-owner = 'owner'
-repo_name = 'repo'
+owner = 'Krishansi'
+repo_name = 'workbook'
 
 # Get the repository object
 repo = g.get_repo(f'{owner}/{repo_name}')
@@ -28,6 +29,8 @@ for commit in commits:
         "date": commit.commit.author.date.strftime("%Y-%m-%d %H:%M:%S"),
     }
     commit_history.append(commit_data)
+    
+print(commit_history)
 
 # Save the commit history as a JSON file
 with open('commit_history.json', 'w') as json_file:
