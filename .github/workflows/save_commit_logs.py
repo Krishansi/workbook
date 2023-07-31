@@ -3,7 +3,7 @@ import json
 
 # Replace 'YOUR_GITHUB_ACCESS_TOKEN' with your actual GitHub access token.
 # If you don't have one, you can create it on GitHub under Developer settings.
-access_token = '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'
+access_token = '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'
 g = Github(access_token)
 #g = Github()
 
