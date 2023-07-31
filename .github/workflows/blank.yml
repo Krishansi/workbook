@@ -30,7 +30,7 @@ jobs:
 
       - name: Run Python script to save commit history
         run: |
-          python save_commit_logs.py
+          python /.github/workflows/save_commit_logs.py
 
       #- name: Run Python script to save commit history
       #  env:
